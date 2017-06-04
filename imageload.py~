@@ -1,8 +1,0 @@
-import numpy as np
-from PIL import Image
-
-IMAGLOC = ("/home/wagner/Pictures/pixelNN.png")
-
-im = Image.open(IMAGLOC)
-arr = np.array(im)
-print(arr)
