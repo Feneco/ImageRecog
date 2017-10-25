@@ -132,25 +132,3 @@ class trainer(object):
 
         self.NN.setweight(_res.x)
         self.optresults = _res
-
-
-if __name__ == '__main__':
-
-    X = np.array([[2, 3],
-                  [4, 5],
-                  [8, 8],
-                  [3, 1],
-                  [0, 5]])
-
-    Y = np.array([[1],
-                  [3],
-                  [4],
-                  [0],
-                  [5]])
-
-    X = X/8
-    Y = Y/10
-
-    a = neuralnetwork()
-    cost1, cost2, cost3 = a.primedcost(X, Y)
-    print(cost1, cost2, cost3)
